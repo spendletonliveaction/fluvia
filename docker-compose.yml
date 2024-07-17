@@ -1,0 +1,10 @@
+
+services:
+  fluvia:
+    image: threateye/fluvia:latest
+    privileged: true
+    volumes:
+      - ./fluvia.yaml:/fluvia.yaml
+    hostname: "fluvia"
+    command: /usr/local/go/bin/fluvia -f ./fluvia.yaml
+    network_mode: "host"

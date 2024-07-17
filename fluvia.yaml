@@ -1,0 +1,5 @@
+ipfix:
+  address: 10.4.205.201
+  port: 2055
+  ingress-interface: docker0
+  interval: 1
